@@ -14,21 +14,16 @@
 
 ## 專案結構
 
-components/
-├── LastPriceRow.tsx 顯示最新成交價與漲跌圖示
-├── OrderBook.tsx Order Book 主容器，組合表頭、報價與成交價
-├── QuoteRow.tsx 單筆報價列，包含價格、數量、總量與動畫
-├── QuoteTable.tsx 顯示買或賣方向的報價列表
-
-hooks/
-├── useOrderBook.ts 負責訂閱報價與成交資料，處理 snapshot/delta
-├── useWebSocket.ts 通用 WebSocket hook
-
-store/
-├── useOrderBookStore.ts 使用 Zustand 管理 bids、asks、價格、動畫狀態等
-
-utils/
-├── format.ts 數字格式化工具函式
+| 檔案 / 資料夾                 | 說明                                    |
+| ----------------------------- | --------------------------------------- |
+| `components/LastPriceRow.tsx` | 顯示最新成交價與漲跌圖示                |
+| `components/OrderBook.tsx`    | Order Book 主容器，組合表頭與報價       |
+| `components/QuoteRow.tsx`     | 單筆報價列，包含價格、數量、總量與動畫  |
+| `components/QuoteTable.tsx`   | 顯示買或賣方向的報價列表                |
+| `hooks/useOrderBook.ts`       | 訂閱報價與成交資料，處理 snapshot/delta |
+| `hooks/useWebSocket.ts`       | 通用 WebSocket hook                     |
+| `store/useOrderBookStore.ts`  | Zustand 狀態儲存，包含 bids/asks/動畫等 |
+| `utils/format.ts`             | 數字格式化工具函式                      |
 
 ## 技術棧
 
